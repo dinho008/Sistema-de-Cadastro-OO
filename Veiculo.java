@@ -1,57 +1,61 @@
 public class Veiculo {
-    private String Marca;
-    private String Modelo;
-    private int Ano;
-    private String Placa;
+    // Atributos privados (camelCase)
+    private String marca;
+    private String modelo;
+    private int ano;
+    private String placa;
 
+    // Construtor default
     public Veiculo() {
     }
-    
-    public Veiculo(String Marca, String Modelo, int Ano, String Placa) {
-        this.Marca = Marca;
-        this.Modelo = Modelo;
-        this.Ano = Ano;
-        this.Placa = Placa;
+
+    // Construtor com parâmetros
+    public Veiculo(String marca, String modelo, int ano, String placa) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.placa = placa;
     }
 
-    public String GetMarca() {
-        return Marca;
+    // Getters e Setters
+    public String getMarca() {
+        return marca;
     }
 
-    public void SetMarca(String Marca) {
-        this.Marca = Marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public String GetModelo() {
-        return Modelo;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void SetModelo(String Modelo) {
-        this.Modelo = Modelo;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
-    public int GetAno() {
-        return Ano;
+    public int getAno() {
+        return ano;
     }
 
-    public void SetAno(int Ano) {
-        this.Ano = Ano;
+    public void setAno(int ano) {
+        this.ano = ano;
     }
 
-    public String GetPlaca() {
-        return Placa;
+    public String getPlaca() {
+        return placa;
     }
 
-    public void SetPlaca(String Placa) {
-        this.Placa = Placa;
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
+    // toString formatado
+    @Override
     public String toString() {
-        return "Veículo {" +
-                "Marca='" + Marca + '\'' +
-                ", Modelo='" + Modelo + '\'' +
-                ", Ano=" + Ano +
-                ", Placa='" + Placa + '\'' +
-                '}';
+        return "Marca: " + marca +
+               " | Modelo: " + modelo +
+               " | Ano: " + ano +
+               " | Placa: " + placa;
     }
 }
