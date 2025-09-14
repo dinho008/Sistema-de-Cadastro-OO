@@ -17,7 +17,7 @@ public class CadastroVeiculos {
             System.out.println("0 - Sair");
             System.out.print("Escolha: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // limpar buffer
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1 -> cadastrarVeiculo();

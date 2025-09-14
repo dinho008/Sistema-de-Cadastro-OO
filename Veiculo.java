@@ -1,15 +1,13 @@
 public class Veiculo {
-    // Atributos privados (camelCase)
+
     private String marca;
     private String modelo;
     private int ano;
     private String placa;
 
-    // Construtor default
     public Veiculo() {
     }
 
-    // Construtor com parâmetros
     public Veiculo(String marca, String modelo, int ano, String placa) {
         this.marca = marca;
         this.modelo = modelo;
@@ -17,7 +15,6 @@ public class Veiculo {
         this.placa = placa;
     }
 
-    // Getters e Setters
     public String getMarca() {
         return marca;
     }
@@ -50,8 +47,6 @@ public class Veiculo {
         this.placa = placa;
     }
 
-    // toString formatado
-    @Override
     public String toString() {
         return "Marca: " + marca +
                " | Modelo: " + modelo +
